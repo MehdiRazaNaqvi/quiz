@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+
+
+
+.base {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+.right {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(113, 113, 113);
+
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  grid-template-rows: 0.3fr 1fr 1fr 1fr;
+
+  place-items: center;
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.part {
+  width: 95%;
+  height: 95%;
+  background-color: rgb(15, 15, 15);
+
+
+  border-radius: 1rem;
+
+
+}
+
+
+
+
+.four {
+  grid-column: 1/2;
+}
+
+
+.five {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+
+.one {
+  /* background-color: rgb(42, 38, 38); */
+  grid-column: 1/4;
+  width: 97%;
+  height: 100%;
+
+
+}
+
+
+
+
+
+
+
+.six {
+  /* background-color: black; */
+
+  grid-row: 3/5;
+  grid-column: 2/3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.actual_bar {
+  width: 100%;
+  height: 100%;
+  /* background-color: grey; */
+}
+
+
+
+
+
+
+
+.left {
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+
+  row-gap: 5%;
+
+  place-items: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+.left-part {
+  width: 90%;
+  height: 100%;
+
+  border-radius: 1.5rem;
+
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.left-three,
+.left-four,
+logout {
+  /* background-color: orange; */
+  border: 1px solid skyblue;
+
+}
+
+.logout:hover,
+.left-three:hover,
+.left-four:hover {
+  background-color: rgb(255, 182, 47);
+  color: white;
+}
+
+
+
+
+
+
+.logo {
+  width: 20%;
+  height: 100%;
+  margin-left: 5%;
+}
+
+
+
+
+
+
+.logout {
+  background-color: rgb(244, 244, 244);
+  color: white;
+}
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .base {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  .base .left {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* background-color: red; */
+    gap: 3%;
+
+    font-size: x-small;
+
+    padding-right: 5%;
+
+
+
+  }
+
+
+
+  .base .left-part {
+    width: 10%;
+    height: 50%;
+    border: none;
+
+
+  }
+
+  .base .logout {
+    display: none;
+  }
+
+  .base .left-one {
+    display: none;
+  }
+
+
+  .base .login_img {
+    width: 65%;
+    height: 80%;
+  }
+
+
+
+  .base .left {
+    min-height: 10vh;
+  }
+
+  .base .right {
+
+    height: 300vh;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    /* background-color: red; */
+
+    overflow-y: scroll;
+
+
+
+    gap: 2%;
+
+  }
+
+
+
+  .base .one {
+    display: none;
+  }
+
+
+  .base .part {
+    display: flex;
+
+    min-height: 50vh;
+    width: 90%;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 380px) {
+
+  .base .left-part {
+    font-size: 80%;
+  }
+
+  .base .one {
+    display: none;
+  }
+
+  .base .part {
+    background-color: rgb(191, 191, 191);
+    width: 95%;
+  }
+
+
+  .base .right {
+    background-color: whitesmoke;
+    padding: 3%;
+  }
+
+  
+}
